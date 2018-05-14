@@ -46,9 +46,8 @@ date "+%H:%M                 %d/%m/%y"
 echo " "
 
 # PS1
-#export PS1="\[\e[0;32m\]\u \[\033[33m\]\$(parse_git_branch)\[\033[00m\]  > \[\e[0m\]"
 
-PS1="${green}\\u ${purple}\$(parse_git_branch)${green}> ${NC}"
+PS1="${green}\\u ${purple}\$(parse_git_branch)${green} > ${NC}"
 
 # LS Colours
 export CLICOLOR=1
@@ -65,13 +64,17 @@ alias tref=". ~/.bash_profile"
 alias python="python3"
 alias bprofile="vim .bash_profile"
 
-    #To update bash git
-    alias pushbprofile="cd ~;
-                        sudo cp .bash_profile ~/Documents/BashProfile;
-                        cd Documents/BashProfile;
-                        sudo rm MyProfile;
-                        mv .bash_Profile MyProfile;
-			cd ~;"
+#To update bash git
+alias pushbprofile="cd ~;
+                    sudo cp .bash_profile ~/Documents/BashProfile;
+                    cd Documents/BashProfile;
+                    sudo rm MyProfile;
+                    mv .bash_Profile MyProfile;
+		    git pull;
+                    git add -A;
+                    git commit -am 'updated bash profile';
+                    git push;
+                    cd ~;"
 
 
 
