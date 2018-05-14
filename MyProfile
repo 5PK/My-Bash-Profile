@@ -1,21 +1,24 @@
 ###################
 # My Bash Profile #
-##################
+###################
 
+--------------------------------------
 # 5PK # ktran # PhoKing # Kevin Tran #
+--------------------------------------
 
+##############
+# Git Branch #
+##############
 
-#Git Branch
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 
+###############################
+# Colour Mapping (caps = bold)#
+###############################
 
-#Colours
-GREEN='\[\e[0;32m\]'
-
-# Colour Mapping
 grey='\[\033[1;30m\]'
 red='\[\033[0;31m\]'
 RED='\[\033[1;31m\]'
@@ -33,7 +36,11 @@ cyan='\[\033[0;36m\]'
 CYAN='\[\033[1;36m\]'
 NC='\[\033[0m\]'
 
-# MOTD + Welcome
+
+##################
+# MOTD + Welcome #
+##################
+
 echo " "
 fortune
 echo " "
@@ -45,15 +52,26 @@ echo "-------------------------------"
 date "+%H:%M                 %d/%m/%y"
 echo " "
 
-# PS1
+
+#######
+# PS1 #
+#######
 
 PS1="${green}\\u ${purple}\$(parse_git_branch)${green} > ${NC}"
 
-# LS Colours
+
+##############
+# LS Colours #
+##############
+
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-# Bash Aliases
+
+################
+# Bash Aliases #
+################
+
 alias c="clear"
 alias p="pwd"
 alias py="python3"
@@ -64,7 +82,11 @@ alias tref=". ~/.bash_profile"
 alias python="python3"
 alias bprofile="vim .bash_profile"
 
-#To update bash git
+
+##############################
+# Update Bash Profile on git #
+##############################
+
 alias pushbprofile="cd ~;
                     sudo cp .bash_profile ~/Documents/BashProfile;
                     cd Documents/BashProfile;
@@ -77,9 +99,12 @@ alias pushbprofile="cd ~;
                     cd ~;"
 
 
+#################
+# Setting Paths #
+#################
 
-# Setting PATH for Python 3.6
-# The original version is saved in .bash_profile.pysave
+ # Setting PATH for Python 3.6
+ # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
