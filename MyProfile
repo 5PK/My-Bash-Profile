@@ -36,6 +36,14 @@ cyan='\[\033[0;36m\]'
 CYAN='\[\033[1;36m\]'
 NC='\[\033[0m\]'
 
+dategreen='\033[0;32m'
+
+##################
+# Date Variables #
+##################
+
+TODAY=$(date '+%d/%m/%y')
+TIME=$(date '+%H:%M')
 
 ##################
 # MOTD + Welcome #
@@ -49,7 +57,7 @@ echo " "
 echo "-------------------------------"
 echo " Hey Kevin. Let's get to work. "
 echo "-------------------------------"
-date "+%H:%M                 %d/%m/%y"
+echo "$TIME                  $TODAY"
 echo " "
 
 
