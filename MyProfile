@@ -6,13 +6,16 @@
 # 5PK # ktran # PhoKing # Kevin Tran #
 #------------------------------------#
 
-##############
-# Git Branch #
-##############
+
+
+##################
+# Get Git Branch #
+##################
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+
 
 
 ###############################
@@ -44,6 +47,14 @@ dategreen='\033[0;32m'
 
 TODAY=$(date '+%d/%m/%y')
 TIME=$(date '+%H:%M')
+
+
+##########################
+# Lowercase Autocomplete #
+##########################
+
+bind "set completion-ignore-case on"
+
 
 ##################
 # MOTD + Welcome #
