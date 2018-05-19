@@ -53,7 +53,7 @@ TIME=$(date '+%H:%M')
 # Lowercase Autocomplete #
 ##########################
 
-bind "set completion-ignore-case on"
+#echo "$(bind "set completion-ignore-case on")"
 
 
 ##################
@@ -91,15 +91,22 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Bash Aliases #
 ################
 
-alias c="clear"
-alias p="pwd"
-alias py="python3"
-alias psql="psql postgres"
-alias automanage="cd ~/Documents/DjangoProjects/AutoManage"
-alias dtest="cd ~/Documents/DjangoProjects/DjangoTestProjects"
-alias tref=". ~/.bash_profile"
-alias python="python3"
+alias c="clear"										#Clear the terminal
+alias p="pwd"										#Show current path
+alias py="python3"									#Use python 3.6
+alias psql="psql postgres"								#Enter Postgres shell
+alias automanage="cd ~/Documents/DjangoProjects/AutoManage"				#Go to AutoManage project
+alias dtest="cd ~/Documents/DjangoProjects/DjangoTestProjects"				#Go to Test projects
+alias tref=". ~/.bash_profile"								#Refresh terminal
+alias python="python3"									#Prevent accidentally using python 2
 alias bprofile="vim .bash_profile"
+alias rundf="cd;									
+             cd Documents/DFortress/df_osx\ 2/;
+	     sh df;"									#Play Dwarf Fortress
+
+alias b="cd .."										#Back 1 directory level	
+alias h="cd"										#Go home
+alias startenv="source env/bin/activate"						#Start Virtual Env 
 
 
 ##############################
