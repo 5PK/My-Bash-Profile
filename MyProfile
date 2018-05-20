@@ -49,13 +49,6 @@ TODAY=$(date '+%d/%m/%y')
 TIME=$(date '+%H:%M')
 
 
-##########################
-# Lowercase Autocomplete #
-##########################
-
-#echo "$(bind "set completion-ignore-case on")"
-
-
 ##################
 # MOTD + Welcome #
 ##################
