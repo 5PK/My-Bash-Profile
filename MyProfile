@@ -101,7 +101,10 @@ alias b="cd .."								#Back 1 directory level
 alias h="cd"								#Go home
 alias startenv="source env/bin/activate"				#Start Virtual Env 
 alias rd="rm -r"							#Remove directory + contents
+alias rundserver="python manage.py runserver"				#Run Django Server
 
+alias ll='ls -FGlAhp'                       				# Preferred 'ls' implementation
+cd() { builtin cd "$@"; ll; }               				# Always list directory contents upon 'cd'
 
 
 ##############################
