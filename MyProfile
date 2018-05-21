@@ -84,26 +84,27 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 # Bash Aliases #
 ################
 
-alias c="clear"								#Clear the terminal
-alias p="pwd"								#Show current path
-alias py="python3"							#Use python 3.6
-alias psql="psql postgres"						#Enter Postgres shell
-alias automanage="cd ~/Documents/DjangoProjects/AutoManage"		#Go to AutoManage project
-alias dtest="cd ~/Documents/DjangoProjects/DjangoTestProjects"		#Go to Test projects
-alias tref=". ~/.bash_profile"						#Refresh terminal
-alias python="python3"							#Prevent accidentally using python 2
+alias c="clear"								# Clear the terminal
+alias p="pwd"								# Show current path
+alias py="python3"							# Use python 3.6
+alias psql="psql postgres"						# Enter Postgres shell
+alias automanage="cd ~/Documents/DjangoProjects/AutoManage"		# Go to AutoManage project
+alias dtest="cd ~/Documents/DjangoProjects/DjangoTestProjects"		# Go to Test projects
+alias tref=". ~/.bash_profile"						# Refresh terminal
+alias python="python3"							# Prevent accidentally using python 2
 alias bprofile="vim .bash_profile"
 alias rundf="cd;									
              cd Documents/DFortress/df_osx\ 2/;
 	     sh df;"							#Play Dwarf Fortress
 
-alias b="cd .."								#Back 1 directory level	
-alias h="cd"								#Go home
-alias startenv="source env/bin/activate"				#Start Virtual Env 
-alias rd="rm -r"							#Remove directory + contents
-alias rundserver="python manage.py runserver"				#Run Django Server
+alias b="cd .."								# Back 1 directory level	
+alias h="cd"								# Go home
+alias startenv="source env/bin/activate"				# Start Virtual Env 
+alias rd="rm -r"							# Remove directory + contents
+alias rundserver="python manage.py runserver"				# Run Django Server
 
-alias ll='ls -FGlAhp'                       				# Preferred 'ls' implementation
+alias ll='ls -1'                       					# ls implementation
+alias lh='ls -A1'							# lists hidden files
 cd() { builtin cd "$@"; ll; }               				# Always list directory contents upon 'cd'
 
 
