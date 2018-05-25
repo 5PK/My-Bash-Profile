@@ -97,7 +97,7 @@ alias rundf="cd;
              cd Documents/DFortress/df_osx\ 2/;
 	     sh df;"							#Play Dwarf Fortress
 
-alias b="cd .."								# Back 1 directory level	
+alias .="cd .."								# Back 1 directory level	
 alias h="cd"								# Go home
 alias startenv="source env/bin/activate"				# Start Virtual Env 
 alias rd="rm -r"							# Remove directory + contents
