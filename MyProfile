@@ -97,7 +97,7 @@ alias rundf="cd;
              cd Documents/DFortress/df_osx\ 2/;
 	     sh df;"							#Play Dwarf Fortress
 
-alias .="cd .."								# Back 1 directory level	
+alias ,="cd .."								# Back 1 directory level	
 alias h="cd"								# Go home
 alias startenv="source env/bin/activate"				# Start Virtual Env 
 alias rd="rm -r"							# Remove directory + contents
@@ -105,7 +105,10 @@ alias rundserver="python manage.py runserver"				# Run Django Server
 
 alias ll='ls -1'                       					# ls implementation
 alias lh='ls -A1'							# lists hidden files
-cd() { builtin cd "$@"; ll; }               				# Always list directory contents upon 'cd'
+cd() { builtin cd "$@"; ls; }               				# Always list directory contents upon 'cd'
+
+alias dawson='open http://www.channel4.com/programmes/dawsons-creek'    # opens Dawsons Creek on Browser
+alias edit='atom'							# Preferred atom editor
 
 
 ##############################
